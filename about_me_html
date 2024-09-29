@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+  <nav>
+    <ul>
+      <li><a #about>Home</a></li>
+      <li><a #about>About</a></li>
+      <li><a #service>Services</a></li>
+      <li><a #portfolio>Portfolio</a></li>
+      <li><a #contact>Contact</a></li>
+    </ul>
+  </nav>
+<body>
+  <h1> ABOUT </h1>
+  <h2> Meet the Owner </h2>
+  <p> Hi! I’m Nina Thompson and
+ I’m a hairdresser. My salon,
+Enchanted Locks, is where
+the magic happens, and
+I’m excited to create a
+website that’s as bold and
+vibrant as the styles I craft.
+I’m all about sharing
+beauty tips, making people
+feel fabulous, and
+spreading good vibes with
+my laugh. </p>
+</body>
+</head>
+</html>
