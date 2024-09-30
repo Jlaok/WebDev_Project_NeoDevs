@@ -52,22 +52,57 @@
 /* ------------------------- START OF ABOUT ME ------------------------------*/
 
  .h1 {
-      text-align: center;
       font-size: 2.5em;
+      text-align: center;
       color: rgb(0, 0, 0);
+      margin: 0 auto;
+      position: absolute;
+      top: 22.5%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-decoration: underline;
 }
 
 .h3 {
-      text-align: center;
       font-size: 2em;
+      text-align: center;
       color: rgb(0, 0, 0); 
 }
 
 .p {
-      font-size: 1.2em;
+      font-size: 1.5em;
+      text-align: center;
       line-height: 1.6; 
-      text-align: center;
-      max-width: 400px;
-      text-align: center;
+      max-width: auto;
       margin: 0 auto;
+      position: absolute;
+      top: 74%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bolder;
+      color: #ffffff;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+}
+
+/* -------------------------- IMAGE OF OWNER ON BACKDROP --------------------*/
+
+.owner_img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 590px;
+      max-width: fit-content;
+      z-index: 1000;
+}
+
+.box {
+   width: 90%;
+   border: 15px solid rgb(243, 202, 98);
+   padding: auto ;
+   margin: auto;
+   align-items: center;
+   z-index: 900;
+   height: 575px;
+   background-color: rgb(243, 202, 98);
 }
