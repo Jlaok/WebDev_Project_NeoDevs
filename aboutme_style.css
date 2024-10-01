@@ -51,7 +51,7 @@
 
 /* ------------------------- START OF ABOUT ME ------------------------------*/
 
- .h1 {
+ .aboutteam {
       font-size: 3em;
       text-align: center;
       color: rgb(0, 0, 0);
@@ -63,15 +63,15 @@
       text-decoration: underline;
 }
 
-.h3 {
+.meetowner {
       font-size: 2.2em;
       text-align: center;
       text-decoration: underline;
       color: rgb(0, 0, 0); 
-      transform: translate(-3.4%, 150%);
+      transform: translate(-3.4%, 185%);
 }
 
-.p {
+.ninadesc {
       font-size: 1.5em;
       text-align: center;
       line-height: 1.6; 
@@ -80,7 +80,7 @@
       position: absolute;
       top: 74%;
       left: 50%;
-      transform: translate(-65%, -70%);
+      transform: translate(-65%, -50%);
       font-weight: bolder;
       color: #000000;
 }
@@ -118,3 +118,55 @@
       transform: translate(1.5%, 5%);
 }
 
+/* -------------------- Nina's team --------------- */
+
+.polaroid2 {
+   width: 555px;
+   height: 790px;
+   border: 15px solid rgb(198, 202, 198);
+   z-index: 0;
+   margin-left: 1100px;
+   background-color: rgb(198, 202, 198);
+}
+
+.sofia_img {
+   display: block;
+   position: relative;
+   height: 520px;
+   z-index: 1;
+   transform: translate(4%, 15%);
+}
+
+.marker_name2 {
+   font-size: 6em;
+   z-index: 2;
+   font-family: "Permanent Marker", cursive;
+   font-weight: 400;
+   font-style: normal;
+   transform: translate(1%, 70%);
+   rotate: 2deg;
+   line-height: 0.7;
+   text-align: center;
+}
+
+.sofiadesc {
+   font-size: 1.5em;
+   text-align: center;
+   line-height: 1.6; 
+   max-width: 400px;
+   margin: 0 auto;
+   position: absolute;
+   top: 74%;
+   left: 50%;
+   transform: translate(-55%, 250%);
+   font-weight: bolder;
+   color: #000000;
+}
+
+.stylist {
+   font-size: 2.2em;
+   text-align: center;
+   text-decoration: underline;
+   color: rgb(0, 0, 0); 
+   transform: translate(-98%, -500%);
+}
