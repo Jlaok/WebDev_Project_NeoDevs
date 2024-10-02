@@ -51,25 +51,7 @@
 
 /* ------------------------- START OF ABOUT ME ------------------------------*/
 
- .aboutteam {
-      font-size: 3em;
-      text-align: center;
-      color: rgb(0, 0, 0);
-      margin: 0 auto;
-      position: absolute;
-      top: 22.5%;
-      left: 50%;
-      transform: translate(-50%, -10%);
-      text-decoration: underline;
-}
 
-.meetowner {
-      font-size: 2.2em;
-      text-align: center;
-      text-decoration: underline;
-      color: rgb(0, 0, 0); 
-      transform: translate(-3.4%, 185%);
-}
 
 .ninadesc {
       font-size: 1.5em;
@@ -77,10 +59,8 @@
       line-height: 1.6; 
       max-width: 400px;
       margin: 0 auto;
-      position: absolute;
-      top: 74%;
-      left: 50%;
-      transform: translate(-65%, -50%);
+      position: relative;
+      transform: translate(125%, -135%);
       font-weight: bolder;
       color: #000000;
 }
@@ -93,10 +73,11 @@
    font-family: "Permanent Marker", cursive;
    font-weight: 400;
    font-style: normal;
-   transform: translate(1%, 20%);
+   transform: translate(0%, -340%);
    rotate: 2deg;
    line-height: 0.7;
    text-align: center;
+   position: relative;
 }
 
 
@@ -155,10 +136,10 @@
    line-height: 1.6; 
    max-width: 400px;
    margin: 0 auto;
-   position: absolute;
+   position: relative;
    top: 74%;
    left: 50%;
-   transform: translate(-55%, 250%);
+   transform: translate(-200%, -270%);
    font-weight: bolder;
    color: #000000;
 }
@@ -168,5 +149,24 @@
    text-align: center;
    text-decoration: underline;
    color: rgb(0, 0, 0); 
-   transform: translate(-98%, -500%);
+   transform: translate(-93.5%, -800%);
+   position: relative;
+}
+
+.meet_the_owner {
+   font-size: 2.2em;
+   text-align: center;
+   text-decoration: underline;
+   color: rgb(0, 0, 0); 
+   transform: translate(90%, -2350%);
+   position: relative;
+}
+
+.about_team {
+   font-size: 3.2em;
+   text-align: center;
+   text-decoration: underline;
+   color: rgb(0, 0, 0); 
+   transform: translate(90%, -1900%);
+   position: relative;
 }
