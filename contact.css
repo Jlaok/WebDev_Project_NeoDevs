@@ -1,0 +1,176 @@
+*{ 
+    margin: 0;
+    padding: 0;
+   font-family: sans-serif;
+ }
+   .navbarbg{
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
+ }
+ .logo{
+       list-style: none;
+       padding: 25px;
+       text-align: center;
+       position: relative;
+       display: block;
+       width: 50%;
+       margin: auto;
+ }
+ .line1{
+     width: 400px;
+     border-top: 1px solid white;
+     background-color: #fff;
+     border: 0 none;
+     color: #fff;
+     height: 3px;
+     margin: auto
+   
+ }
+ .navbar ul{
+     display: inline-flex;
+     margin: 20px;
+ }
+ .navbar ul li{
+     list-style: none;
+     margin: 0 30px;
+     margin-left: 0;
+     cursor: pointer;
+ }
+ .navbar ul li a{
+   color: #ffffffcf;
+   text-decoration: none;
+   text-align: center;
+ }
+ .content{
+     width: 100%;
+     height: 500%;
+     background: rgb(216, 219, 227)
+ }
+
+
+
+
+
+
+ .divintro {
+    color: rgb(88, 87, 87);
+    text-align: left;
+    text-indent: 4%;
+    font-size: 180%;
+  }
+
+  .divintror {
+    color: rgb(88, 87, 87);
+    text-align: left;
+    text-indent: 0%;
+    font-size: 180%;
+  }
+
+  label {
+    color: rgb(88, 87, 87);
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+  }
+  .emailf{
+    width: 94%; 
+    margin: 0 auto;
+  }
+
+  .booking{
+    margin: 2rem;
+    position: absolute;
+    top: 28.5%;
+    right: 00%;
+  }
+
+  .inputE {
+    width: 40%;
+    padding: 12px;
+    margin: 4px 0;
+
+  
+  }
+
+  .inputC{
+    width: 40%;
+    height: 235px;
+    margin: 4px 0;
+  
+  }
+
+  .divE{
+    color: rgb(41, 41, 41);
+    text-align: left;
+    text-indent: 50px;
+    width: 0%;
+    padding: 12px;
+    margin: 4px 0;
+    box-sizing: border-box;
+
+  }
+
+  .mysection {
+    background-color: rgba(163, 175, 180, 0.241);
+    width: 50%;
+    height: 50%;
+ }
+
+  .button {
+    background-color: #131313;
+    border: none;
+    color: rgb(243, 243, 243);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px 25px;
+    cursor: pointer;
+  }
+
+  .buttonb {
+    background-color: #131313;
+    border: none;
+    color: rgb(243, 243, 243);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: -100px;
+    cursor: pointer;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .opts{
+    color: rgb(88, 87, 87);
+
+
+  }
+  .hairops{
+    color: rgb(88, 87, 87);
+    font-size: 180%;
+
+  }
+  
+  .accent{
+    accent-color: rgb(161, 142, 150);
+    background-color: rgb(211, 211, 211);
+
+  }
+
+  html {
+    height: 100%;
+    background-color: rgb(255, 229, 229);
+  }
+  .bg{
+    height: 100%;
+    background-color: rgb(232, 221, 200);
+    width: 50%;
+  }
