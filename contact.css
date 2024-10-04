@@ -2,73 +2,74 @@
     margin: 0;
     padding: 0;
    font-family: sans-serif;
- }
-   .navbarbg{
-     width: 100%;
-     height: 100%;
-     background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
- }
- .logo{
-       list-style: none;
-       padding: 25px;
-       text-align: center;
-       position: relative;
-       display: block;
-       width: 50%;
-       margin: auto;
- }
- .line1{
-     width: 400px;
-     border-top: 1px solid white;
-     background-color: #fff;
-     border: 0 none;
-     color: #fff;
-     height: 3px;
-     margin: auto
-   
- }
- .navbar ul{
-     display: inline-flex;
-     margin: 20px;
- }
- .navbar ul li{
-     list-style: none;
-     margin: 0 30px;
-     margin-left: 0;
-     cursor: pointer;
- }
- .navbar ul li a{
-   color: #ffffffcf;
-   text-decoration: none;
-   text-align: center;
- }
- .content{
-     width: 100%;
-     height: 500%;
-     background: rgb(216, 219, 227)
- }
+}
 
+/* NAV BAR -------------------------------------------------------- */
+.navbarbg{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
+}
 
+.logo{
+  list-style: none;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+  display: block;
+  width: 50%;
+  margin: auto;
+}
 
+.line1{
+  width: 400px;
+  border-top: 1px solid white;
+  background-color: #fff;
+  border: 0 none;
+  color: #fff;
+  height: 3px;
+  margin: auto
+ 
+}
 
+.navbar ul{
+  display: inline-flex;
+  margin: 20px;
+}
 
+.navbar ul li{
+  list-style: none;
+  margin: 0 30px;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.navbar ul li a{
+ color: hsla(0, 0%, 100%, 0.812);
+ text-decoration: none;
+ text-align: center;
+}
+
+/* EMAIL N BOOKING -------------------------------------------- */
 
  .divintro {
-    color: rgb(88, 87, 87);
+    padding: 1%;
+    color: #e95394;
     text-align: left;
-    text-indent: 4%;
+    text-indent: 3%;
     font-size: 180%;
   }
 
   .divintror {
-    color: rgb(88, 87, 87);
+    padding: 0%;
+    color: #3157c9;
     text-align: left;
     text-indent: 0%;
     font-size: 180%;
   }
 
   label {
-    color: rgb(88, 87, 87);
+    color: #ff7db5;
     text-align: left;
     font-family: sans-serif;
     font-weight: bold;
@@ -102,7 +103,7 @@
   }
 
   .divE{
-    color: rgb(41, 41, 41);
+    color: rgb(255, 255, 255);
     text-align: left;
     text-indent: 50px;
     width: 0%;
@@ -119,7 +120,7 @@
  }
 
   .button {
-    background-color: #131313;
+    background-color: #e95394;
     border: none;
     color: rgb(243, 243, 243);
     padding: 15px 32px;
@@ -132,7 +133,7 @@
   }
 
   .buttonb {
-    background-color: #131313;
+    background-color: #3157c9;
     border: none;
     color: rgb(243, 243, 243);
     padding: 15px 32px;
@@ -149,28 +150,62 @@
   }
 
   .opts{
-    color: rgb(88, 87, 87);
+    color:#7db7ff;
 
 
   }
   .hairops{
-    color: rgb(88, 87, 87);
+    color: #5392e9;
     font-size: 180%;
 
   }
   
   .accent{
     accent-color: rgb(161, 142, 150);
-    background-color: rgb(211, 211, 211);
+    background-color: #e7f8ff;
 
   }
 
-  html {
-    height: 100%;
-    background-color: rgb(255, 229, 229);
-  }
   .bg{
     height: 100%;
-    background-color: rgb(232, 221, 200);
+    background-color: #ffe8f0;
     width: 50%;
+  }
+
+  /* END PAGE -------------------------------------------------------- */
+
+  .endpage {
+    position: relative;
+    top: 100%;
+    transform: translateY(0%); /* kinda expands the page? */
+    width: 100%;
+    height: 155px;
+    background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
+}
+
+  .addresstxt {
+    padding: 10px 10px 10px 10px;
+    color: hsla(0, 0%, 100%, 0.812);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .addresstxt2 {
+    padding: 1px 10px 1px 10px;
+    color: hsla(0, 0%, 100%, 0.812);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .hours {
+    transform: translate(1114%, -670%);
+    /* padding: 10px 10px 10px 10px; */
+    color: hsla(0, 0%, 100%, 0.812);
+    font-family: Arial, Helvetica, sans-serif;
+    position:absolute;
+  }
+
+  .hours2 {
+    transform: translate(860%, -151%);
+    color: hsla(0, 0%, 100%, 0.812);
+    font-family: Arial, Helvetica, sans-serif;
+    position:absolute;
   }
