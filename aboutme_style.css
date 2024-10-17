@@ -52,42 +52,28 @@
 /* ------------------------- START OF ABOUT ME ------------------------------*/
 
 
-.about_team {
-   font-size: 3.2em;
-   text-align: center;
-   color: #e33e7b; 
-   transform: translate(130%, -800%);
-}
-.meet_the_owner {
-   font-size: 2.2em;
-   text-align: center;
-   color: #FF70A4; 
-   transform: translate(130%, -2200%);
-   position: relative;
-}
-
 
 .ninadesc {
-   font-size: 1.5em;
-   text-align: left;
-   line-height: 1.6; 
-   max-width: 400px;
-   margin: 0 auto;
-   position: relative;
-   transform: translate(130%, -90%);
-   font-weight: bolder;
-   color: #ffa5c6;
+      font-size: 1.5em;
+      text-align: left;
+      line-height: 1.6; 
+      max-width: 400px;
+      margin: 0 auto;
+      position: relative;
+      transform: translate(125%, -135%);
+      font-weight: bolder;
+      color: #ff9ecd;
 }
 
 /* -------------------------- IMAGE OF OWNER --------------------*/
 
 .marker_name {
-   font-size: 4em;
+   font-size: 6em;
    z-index: 2;
    font-family: "Permanent Marker", cursive;
    font-weight: 400;
    font-style: normal;
-   transform: translate(0%, -590%);
+   transform: translate(0%, -340%);
    rotate: 2deg;
    line-height: 0.7;
    text-align: center;
@@ -96,44 +82,44 @@
 
 
 .polaroid {
-   width: 370px;
-   height: 526.666666667px;
-   border: 15px solid #c5daf7;
+   width: 555px;
+   height: 790px;
+   border: 15px solid rgb(198, 202, 198);
    z-index: 0;
    margin-left: 70px;
-   background-color: #c5daf7;
+   background-color: rgb(198, 202, 198);
 }
 
 
 .owner_img {
-   display: block;
-   position: relative;
-   height: 393.333333333px;
-   z-index: 1;
-   transform: translate(1.5%, 5%);
+      display: block;
+      position: relative;
+      height: 590px;
+      z-index: 1;
+      transform: translate(1.5%, 5%);
 }
 
 /* -------------------- Nina's team --------------- */
 
 .polaroid2 {
-   width: 370px;
-   height: 526.666666667px;
-   border: 15px solid #c5daf7;
+   width: 555px;
+   height: 790px;
+   border: 15px solid rgb(198, 202, 198);
    z-index: 0;
-   /* margin-left: 1100px; */
-   background-color: #c5daf7;
+   margin-left: 1100px;
+   background-color: rgb(198, 202, 198);
 }
 
 .sofia_img {
    display: block;
    position: relative;
-   height: 350px;
+   height: 520px;
    z-index: 1;
-   transform: translate(2%, 8%);
+   transform: translate(4%, 15%);
 }
 
 .marker_name2 {
-   font-size: 4em;
+   font-size: 6em;
    z-index: 2;
    font-family: "Permanent Marker", cursive;
    font-weight: 400;
@@ -143,12 +129,6 @@
    line-height: 0.7;
    text-align: center;
 }
-.stylist {
-   font-size: 2.2em;
-   text-align: center;
-   color: #FF70A4; 
-   transform: translate(130%, -1000%);
-}
 
 .sofiadesc {
    font-size: 1.5em;
@@ -156,11 +136,39 @@
    line-height: 1.6; 
    max-width: 400px;
    margin: 0 auto;
+   position: relative;
    top: 74%;
    left: 50%;
-   transform: translate(135%, -130%);
+   transform: translate(-200%, -270%);
    font-weight: bolder;
-   color: #ff8eb8;
+   color: #ff9ecd;
+}
+
+.stylist {
+   font-size: 2.2em;
+   text-align: center;
+   text-decoration: underline;
+   color: #FF70A4; 
+   transform: translate(-93.5%, -800%);
+   position: relative;
+}
+
+.meet_the_owner {
+   font-size: 2.2em;
+   text-align: center;
+   text-decoration: underline;
+   color: #FF70A4; 
+   transform: translate(90%, -2350%);
+   position: relative;
+}
+
+.about_team {
+   font-size: 3.2em;
+   text-align: center;
+   text-decoration: underline;
+   color: #FF70A4; 
+   transform: translate(105%, -1900%);
+   position: relative;
 }
 
 /* END PAGE -------------------------------------------------------- */
