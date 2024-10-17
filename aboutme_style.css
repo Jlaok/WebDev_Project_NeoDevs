@@ -52,28 +52,42 @@
 /* ------------------------- START OF ABOUT ME ------------------------------*/
 
 
+.about_team {
+   font-size: 3.2em;
+   text-align: center;
+   color: #e33e7b; 
+   transform: translate(130%, -800%);
+}
+.meet_the_owner {
+   font-size: 2.2em;
+   text-align: center;
+   color: #FF70A4; 
+   transform: translate(130%, -2200%);
+   position: relative;
+}
+
 
 .ninadesc {
-      font-size: 1.5em;
-      text-align: left;
-      line-height: 1.6; 
-      max-width: 400px;
-      margin: 0 auto;
-      position: relative;
-      transform: translate(125%, -135%);
-      font-weight: bolder;
-      color: #ff9ecd;
+   font-size: 1.5em;
+   text-align: center;
+   line-height: 1.6; 
+   max-width: 400px;
+   margin: 0 auto;
+   position: relative;
+   transform: translate(130%, -90%);
+   font-weight: bolder;
+   color: #ffa5c6;
 }
 
 /* -------------------------- IMAGE OF OWNER --------------------*/
 
 .marker_name {
-   font-size: 6em;
+   font-size: 4em;
    z-index: 2;
    font-family: "Permanent Marker", cursive;
    font-weight: 400;
    font-style: normal;
-   transform: translate(0%, -340%);
+   transform: translate(0%, -590%);
    rotate: 2deg;
    line-height: 0.7;
    text-align: center;
@@ -82,44 +96,44 @@
 
 
 .polaroid {
-   width: 555px;
-   height: 790px;
-   border: 15px solid rgb(198, 202, 198);
+   width: 370px;
+   height: 526.666666667px;
+   border: 15px solid #c5daf7;
    z-index: 0;
    margin-left: 70px;
-   background-color: rgb(198, 202, 198);
+   background-color: #c5daf7;
 }
 
 
 .owner_img {
-      display: block;
-      position: relative;
-      height: 590px;
-      z-index: 1;
-      transform: translate(1.5%, 5%);
+   display: block;
+   position: relative;
+   height: 393.333333333px;
+   z-index: 1;
+   transform: translate(1.5%, 5%);
 }
 
 /* -------------------- Nina's team --------------- */
 
 .polaroid2 {
-   width: 555px;
-   height: 790px;
-   border: 15px solid rgb(198, 202, 198);
+   width: 370px;
+   height: 526.666666667px;
+   border: 15px solid #c5daf7;
    z-index: 0;
-   margin-left: 1100px;
-   background-color: rgb(198, 202, 198);
+   /* margin-left: 1100px; */
+   background-color: #c5daf7;
 }
 
 .sofia_img {
    display: block;
    position: relative;
-   height: 520px;
+   height: 350px;
    z-index: 1;
-   transform: translate(4%, 15%);
+   transform: translate(2%, 8%);
 }
 
 .marker_name2 {
-   font-size: 6em;
+   font-size: 4em;
    z-index: 2;
    font-family: "Permanent Marker", cursive;
    font-weight: 400;
@@ -129,53 +143,32 @@
    line-height: 0.7;
    text-align: center;
 }
-
-.sofiadesc {
-   font-size: 1.5em;
-   text-align: left;
-   line-height: 1.6; 
-   max-width: 400px;
-   margin: 0 auto;
-   position: relative;
-   top: 74%;
-   left: 50%;
-   transform: translate(-200%, -270%);
-   font-weight: bolder;
-   color: #ff9ecd;
-}
-
 .stylist {
    font-size: 2.2em;
    text-align: center;
-   text-decoration: underline;
    color: #FF70A4; 
-   transform: translate(-93.5%, -800%);
-   position: relative;
+   transform: translate(130%, -1000%);
 }
 
-.meet_the_owner {
-   font-size: 2.2em;
+.sofiadesc {
+   font-size: 1.5em;
    text-align: center;
-   text-decoration: underline;
-   color: #FF70A4; 
-   transform: translate(90%, -2350%);
-   position: relative;
-}
-
-.about_team {
-   font-size: 3.2em;
-   text-align: center;
-   text-decoration: underline;
-   color: #FF70A4; 
-   transform: translate(105%, -1900%);
-   position: relative;
+   line-height: 1.6; 
+   max-width: 400px;
+   margin: 0 auto;
+   top: 74%;
+   left: 50%;
+   transform: translate(135%, -130%);
+   font-weight: bolder;
+   color: #ff8eb8;
 }
 
 /* END PAGE -------------------------------------------------------- */
 
 .endpage {
-   transform: translate(-63.5%, -100%);
-   width: 1890px;
+   top: 100%;
+   transform: translateY(-100%); /* kinda expands the page? */
+   width: 1410px;
    background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
 }
 
@@ -192,7 +185,7 @@
  }
 
  .hours {
-   transform: translate(1528%, -650%);
+   transform: translate(1114%, -670%);
    /* padding: 10px 10px 10px 10px; */
    color: hsla(0, 0%, 100%, 0.812);
    font-family: Arial, Helvetica, sans-serif;
@@ -200,7 +193,7 @@
  }
 
  .hours2 {
-   transform: translate(1180%, -151%);
+   transform: translate(860%, -151%);
    color: hsla(0, 0%, 100%, 0.812);
    font-family: Arial, Helvetica, sans-serif;
    position:absolute;
