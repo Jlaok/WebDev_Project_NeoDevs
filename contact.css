@@ -56,25 +56,27 @@
 
 /* intro text top left and right ------------------------------------------------------------ */
 
-.divintro {
-  color: #FF70A4;;
-  text-align: left;
-  text-indent: 4%;
-  font-size: 180%;
-}
+ .divintro {
+    padding: 1%;
+    color: #e95394;
+    text-align: left;
+    text-indent: 3%;
+    font-size: 180%;
+  }
 
-.divintror {
-  color: #FF70A4;;
-  text-align: left;
-  text-indent: 0%;
-  font-size: 180%;
-}
+  .divintror {
+    padding: 0%;
+    color: #3157c9;
+    text-align: left;
+    text-indent: 0%;
+    font-size: 180%;
+  }
 
 
 /* emailing boxes and booking  ------------------------------------------------------------ */
 
 label {
-  color: #FF70A4;;
+  color: #ff7db5;
   text-align: left;
   font-family: sans-serif;
   font-weight: bold;
@@ -108,7 +110,7 @@ label {
 }
 
 .divE{
-  color: rgb(41, 41, 41);
+  color: rgb(255, 255, 255);
   text-align: left;
   text-indent: 50px;
   width: 0%;
@@ -125,7 +127,7 @@ label {
 }
 
 .button {
-  background-color: #131313;
+  background-color: #e95394;
   border: none;
   color: rgb(243, 243, 243);
   padding: 15px 32px;
@@ -138,16 +140,16 @@ label {
 }
 
 .buttonb {
-  background-color: #131313;
-  border: none;
-  color: rgb(243, 243, 243);
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  vertical-align: -100px;
-  cursor: pointer;
+    background-color: #3157c9;
+    border: none;
+    color: rgb(243, 243, 243);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: -100px;
+    cursor: pointer;
 }
 
 textarea {
@@ -158,12 +160,12 @@ textarea {
 /* text colours ------------------------------------------------------------ */
 
 .opts{
-  color: #FF70A4;;
+  color: #7db7ff;
 
 
 }
 .hairops{
-  color: #FF70A4;;
+  color: #5392e9;
   font-size: 180%;
 
 }
@@ -173,7 +175,7 @@ textarea {
 
 .accent{
   accent-color: rgb(161, 142, 150);
-  background-color: rgb(211, 211, 211);
+  background-color: #e7f8ff;
 
 }
 
@@ -183,7 +185,7 @@ html {
 }
 .bg{
   height: 100%;
-  background-color: rgb(232, 221, 200);
+  background-color: #ffe8f0;
   width: 50%;
 }
 
@@ -193,7 +195,7 @@ html {
 
 .endpage {
   top: 100%;
-  transform: translateY(0%); /* kinda expands the page? */
+  transform: translateY(0%); 
   width: 100%;
   background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
 }
