@@ -166,9 +166,8 @@
 /* END PAGE -------------------------------------------------------- */
 
 .endpage {
-   top: 100%;
-   transform: translateY(-100%); /* kinda expands the page? */
-   width: 1410px;
+   transform:translate(-5.5%);
+   width: 1900px;
    background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
 }
 
