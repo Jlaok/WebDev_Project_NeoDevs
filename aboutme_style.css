@@ -69,7 +69,7 @@
 
 .ninadesc {
    font-size: 1.5em;
-   text-align: center;
+   text-align: left;
    line-height: 1.6; 
    max-width: 400px;
    margin: 0 auto;
@@ -152,7 +152,7 @@
 
 .sofiadesc {
    font-size: 1.5em;
-   text-align: center;
+   text-align: left;
    line-height: 1.6; 
    max-width: 400px;
    margin: 0 auto;
