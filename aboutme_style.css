@@ -56,7 +56,7 @@
    font-size: 3.2em;
    text-align: center;
    color: #e33e7b; 
-   transform: translate(35%, -1670%);
+   transform: translate(35%, -870%);
    width: 1000px;
 }
 
@@ -64,7 +64,7 @@
    font-size: 2.2em;
    text-align: center;
    color: #FF70A4; 
-   transform: translate(130%, -2010%);
+   transform: translate(130%, -900%);
    position: relative;
 }
 
@@ -140,7 +140,7 @@
    font-family: "Permanent Marker", cursive;
    font-weight: 400;
    font-style: normal;
-   transform: translate(1%, 70%);
+   transform: translate(1%, -20%);
    rotate: -3deg;
    line-height: 0.7;
    text-align: center;
@@ -150,7 +150,7 @@
    font-size: 2.2em;
    text-align: center;
    color: #FF70A4; 
-   transform: translate(130%, -1000%);
+   transform: translate(130%, -400%);
 }
 
 .sofiadesc {
