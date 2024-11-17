@@ -1,87 +1,109 @@
 /* -------------------------  LOGO AND NAV BAR ------------------------------*/
 *{ 
-  margin: 0;
-  padding: 0;
- font-family: sans-serif;
-}
- .navbarbg{
+   margin: 0;
+   padding: 0;
+  font-family: sans-serif;
+ }
+  .navbarbg{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
+ }
+ .logo{
+      list-style: none;
+      padding: 25px;
+      text-align: center;
+      position: relative;
+      display: block;
+      width: 50%;
+      margin: auto;
+ }
+ .line1{
+    width: 400px;
+    border-top: 1px solid white;
+    background-color: #fff;
+    border: 0 none;
+    color: #fff;
+    height: 3px;
+    margin: auto
+  
+ }
+ .navbar ul{
+    display: inline-flex;
+    margin: 20px;
+ }
+ .navbar ul li{
+    list-style: none;
+    margin: 0 30px;
+    margin-left: 0;
+    cursor: pointer;
+ }
+ .navbar ul li a{
+  color: #ffffffcf;
+  text-decoration: none;
+  text-align: center;
+ }
+ .content{
+    width: 100%;
+    height: 500%;
+    background: rgb(216, 219, 227)
+ }
+
+ /* Team intro + first polaroid */
+
+ .about_team{
    width: 100%;
-   height: 100%;
-   background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
-}
-.logo{
-     list-style: none;
-     padding: 25px;
-     text-align: center;
-     position: relative;
-     display: block;
-     width: 50%;
-     margin: auto;
-}
-.line1{
-   width: 400px;
-   border-top: 1px solid white;
-   background-color: #fff;
-   border: 0 none;
-   color: #fff;
-   height: 3px;
-   margin: auto
- 
-}
-.navbar ul{
-   display: inline-flex;
-   margin: 20px;
-}
-.navbar ul li{
-   list-style: none;
-   margin: 0 30px;
-   margin-left: 0;
-   cursor: pointer;
-}
-.navbar ul li a{
- color: #ffffffcf;
- text-decoration: none;
- text-align: center;
-}
-.content{
-   width: 100%;
-   height: 500%;
-   background: rgb(216, 219, 227)
-}
-
-/* ------------------------- START OF ABOUT ME ------------------------------*/
-
-
-.about_team {
    font-size: 3.2em;
    text-align: center;
-   color: #e33e7b; 
-   transform: translate(35%, -870%);
-   width: 1000px;
+   color: #e33e7b;
+ }
+
+ .polaroid {
+   width: 370px;
+   height: 526.666666667px;
+   border: 15px solid #c5daf7;
+   z-index: 0;
+   margin-left: 70px;
+   background-color: #c5daf7;
+   position: relative;
+}
+
+.content-wrapper {
+   display: flex;
+   align-items: flex-start; 
+   gap: 20px; 
+}
+
+.owner_img {
+   width: 370px; 
+   height: auto; 
+   flex-shrink: 0; 
+}
+
+.text-content {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   gap: 10px;
 }
 
 .meet_the_owner {
    font-size: 2.2em;
-   text-align: center;
-   color: #FF70A4; 
-   transform: translate(130%, -900%);
-   position: relative;
+   text-align: left; 
+   color: #FF70A4;
+   margin: 0;
 }
-
 
 .ninadesc {
-   font-size: 1.5em;
-   text-align: left;
-   line-height: 1.6; 
-   max-width: 400px;
-   margin: 0 auto;
-   position: relative;
-   transform: translate(130%, -90%);
-   font-weight: bolder;
+   font-size: 1em; 
    color: #ffa5c6;
+   margin: 0; 
+   line-height: 1.6; 
+   max-width: 500px; 
+   word-wrap: break-word; 
 }
 
-/* -------------------------- IMAGE OF OWNER --------------------*/
 
 .marker_name {
    font-size: 4em;
@@ -89,7 +111,6 @@
    font-family: "Permanent Marker", cursive;
    font-weight: 400;
    font-style: normal;
-   transform: translate(0%, -530%);
    rotate: 2deg;
    line-height: 0.7;
    text-align: center;
@@ -97,107 +118,3 @@
 }
 
 
-.polaroid {
-   width: 370px;
-   height: 526.666666667px;
-   border: 15px solid #c5daf7;
-   z-index: 0;
-   margin-left: 70px;
-   background-color: #c5daf7;
-}
-
-
-.owner_img {
-   display: block;
-   position: relative;
-   height: 393.333333333px;
-   z-index: 1;
-   transform: translate(1.5%, 5%);
-}
-
-/* -------------------- Nina's team --------------- */
-
-.polaroid2 {
-   width: 370px;
-   height: 526.666666667px;
-   border: 15px solid #c5daf7;
-   z-index: 0;
-   /* margin-left: 1100px; */
-   background-color: #c5daf7;
-}
-
-.sofia_img {
-   display: block;
-   position: relative;
-   height: 350px;
-   z-index: 1;
-   transform: translate(2%, 8%);
-}
-
-.marker_name2 {
-   font-size: 4em;
-   z-index: 2;
-   font-family: "Permanent Marker", cursive;
-   font-weight: 400;
-   font-style: normal;
-   transform: translate(1%, -20%);
-   rotate: -3deg;
-   line-height: 0.7;
-   text-align: center;
-}
-
-.stylist {
-   font-size: 2.2em;
-   text-align: center;
-   color: #FF70A4; 
-   transform: translate(130%, -400%);
-}
-
-.sofiadesc {
-   font-size: 1.5em;
-   text-align: left;
-   line-height: 1.6; 
-   max-width: 400px;
-   margin: 0 auto;
-   top: 74%;
-   left: 50%;
-   transform: translate(135%, -130%);
-   font-weight: bolder;
-   color: #ff8eb8;
-}
-
-/* END PAGE -------------------------------------------------------- */
-
-.endpage {
-   top: 100%;
-   transform: translateY(-100%); /* kinda expands the page? */
-   width: 1410px;
-   background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
-}
-
- .addresstxt {
-   padding: 10px 10px 10px 10px;
-   color: hsla(0, 0%, 100%, 0.812);
-   font-family: Arial, Helvetica, sans-serif;
- }
-
- .addresstxt2 {
-   padding: 1px 10px 1px 10px;
-   color: hsla(0, 0%, 100%, 0.812);
-   font-family: Arial, Helvetica, sans-serif;
- }
-
- .hours {
-   transform: translate(1114%, -670%);
-   /* padding: 10px 10px 10px 10px; */
-   color: hsla(0, 0%, 100%, 0.812);
-   font-family: Arial, Helvetica, sans-serif;
-   position:absolute;
- }
-
- .hours2 {
-   transform: translate(860%, -151%);
-   color: hsla(0, 0%, 100%, 0.812);
-   font-family: Arial, Helvetica, sans-serif;
-   position:absolute;
- }
