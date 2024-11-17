@@ -1,42 +1,60 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="auto, initial-scale=1.0">
-  <link rel="stylesheet" href="about_me.css">  
-  <title>About Us</title>
+
+
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchanted Locks</title>
+    <link rel="stylesheet" href="aboutme_style.css">
+    <script type="text/javascript" src=""
+    defer></script>
 </head>
 
-
-<!-- Code for the navigation/header bar at top of page -->
 <body>
-  <div class="navbarbg">
-    <div class="logo">
-      <img alt="Enchanted locks logo" src="https://i.ibb.co/7G8CtgB/ENCHANTEDLOCKSLOGO.png" width="322.5" height="108.5"></a>
-        <br>
-        <br>
-        <hr class=line1 size= 10>
-    
+
+<!-- NAV BAR ------------------->
+    <nav> <button class="mobile-button" onclick="toggleSidebar()">Button</button>
+
+        <div class="logocont">
+            <img src="ELlogoWHITE.png" alt="Enchanted Locks Logo" class="logo"> 
+        </div>
+
+        <div class="logotextdiv">
+            <p class="logotext">ENCHANTED LOCKS</p>
+        </div>
+
+        <hr>
+
         <div class="navbar">
-         <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about_me.html">ABOUT</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-         </ul>
-       </div>
-      </div>
-     </div>
-  </body>
-<!-- Break between top header bar and rest of the page -->  
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about_me.html">ABOUT</a></li>
+              <li><a href="faq.html">FAQS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+  
+    </nav>
+
+<!-- SIDE BAR ------------------->
+    <aside id="sidebar">
+
+        <!-- 
+        <div class="logocont">
+        <img src="gradient-hair-salon-logo-template (1).png" alt="Enchanted Locks Logo" class="logo"> 
+        </div>
+        -->
+        <div>
+
+        </div>
+
+    </aside>
+    
+    
+<!-- MAIN CONTENT ------------------->
+    <main>
+
 <h1 class="about_team">About The Team</h1>
 <!-- Code for the polaroid picture boxes and introduction texts from the team -->
 <div class="polaroid">
@@ -81,30 +99,35 @@
   </div>
 </div>    
 <br>  
-  <!-- END PAGE---------------->
-<body>
+
+</main>
+<!-- FOOTER  ------------------------->
+<footer>
 
   <div class="endpage">
-  
-      <h3 class="addresstxt">Address:</h3>
-        <p class="addresstxt2">
-        Park House        <br>
-        191 N Circular Rd <br>
-        Grangegorman      <br>
-        Dublin 7          <br>
-        D07 EWV4
-        </p> 
-  
-    <br>
-  
-      <h3 class="hours" >Shop Hours:</h3>
-        <p class="hours2" >
-        Mon-Wed: 9am-5pm  <br>
-        Thurs: 9-4pm      <br>
-        Friday 11am-6pm   <br>
-        Sat-Sun: CLOSED   <br>
-        </p>
-  
+
+    <div class="leftinfo2">
+    <h3 class="addresstxt">Address:</h3>
+      <p class="addresstxt2">
+      Park House        <br>
+      191 N Circular Rd <br>
+      Grangegorman      <br>
+      Dublin 7          <br>
+      D07 EWV4
+      </p> 
+    </div>
+
+    <div class="rightinfo2">
+    <h3 class="hours" >Shop Hours:</h3>
+      <p class="hours2" >
+      Mon-Wed: 9am-5pm  <br>
+      Thurs: 9-4pm      <br>
+      Friday 11am-6pm   <br>
+      Sat-Sun: CLOSED 
+      </p>
+    </div>
+    
   </div>
-  </body>
+
+  </footer>
   </html>
