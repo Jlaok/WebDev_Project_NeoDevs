@@ -1,242 +1,320 @@
-* { 
+*{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
-  }
-/* NAV BAR -------------------------------------------------------- */
-  .navbarbg
-  {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
-  }
+}
 
-  .logo
-  {
-    list-style: none;
-    padding: 25px;
-    text-align: center;
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 0px 1fr;
+    /* grid-template-columns: 280px 1fr; /* 300px=side bar, 1fr=main*/
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "sidebar navbar"
+    "sidebar main"
+    "sidebar footer";
+}
+
+/* -------- NAV BAR --------------------------- */
+
+nav{
+    height: 12.5rem;
+    top: 0;
     position: relative;
-    display: block;
-    width: 50%;
-    margin: auto;
-  }
+    grid-area: navbar;
+    background: #2C2A4A;
+    
+    /*padding: 1em;*/
+}
 
-  .line1
-  {
-    width: 400px;
-    border-top: 1px solid white;
-    background-color: #fff;
-    border: 0 none;
-    color: #fff;
-    height: 3px;
-    margin: auto
-  }
+/* LOGO */
 
-  .navbar ul 
-  {
-    display: inline-flex;
-    margin: 20px;
-  }
-
-  .navbar ul li
-  {
-    list-style: none;
-    margin: 0 30px;
-    margin-left: 0;
-    cursor: pointer;
-    font-family: sans-serif;
-  }
- 
-  .navbar ul li a
-  {
-   color: hsla(0, 0%, 100%, 0.812);
-   text-decoration: none;
-   text-align: center;
-  }
-
-/* WELCOME -------------------------------------------------------- */
-
-  .contenttxt
-  {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 60px;
+.logocont{
     text-align: center;
-    color: transparent;
-    background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
-    background-clip: text;
-  }
+}
 
-  .contenttxt2
-  {
-    font-family: sans-serif;
-    font-size: 40px;
+.logo{
+    padding: 5px;
+    max-width:100px;
+    height: auto;
+}
+
+
+.logotextdiv{
     text-align: center;
-    color: #ff8bae;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:150%;
+    background-image: linear-gradient(45deg,#907AD6, #907AD6); /* Gradient from left to right */
+    background-clip: text; /* Clips the background to the text */
+    color: transparent; /* Makes the text itself transparent so the gradient is visible */
+}
+
+
+
+hr {
+  width: 50%; /* Sets the width to 50% of its parent container */
+  border: 0; /* Removes the default border */
+  border-top: 2px solid #ffffff; /* Adds a solid black line */
+  margin: 20px auto; /* Centers the line and adds space around it */
+}
+
+
+/* NAV ELEMENTS */
+
+
+.navbar {
+    display: flex; 
+    justify-content: center; /* Centers the `ul` horizontally */
+    align-items: center; /* Centers the `ul` vertically */
+    margin-top: 1rem;
   }
 
-  .welcome
-  {
-    transform: translate(-90%, 10%, 30%, 10%);
-  }
-  .test 
-  {
-    height: 100%;
-  }
+.navbar ul 
+{
+  display: inline-flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin: 0; 
+}
 
-  .border
-  {
-    border: 2px solid rgb(255, 154, 154);
-    border-radius: 5px;
- }
+.navbar ul li
+{
+  list-style: none;
+  margin: 0 30px; /* Space between the list items */
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  .wel
-  {
+.navbar ul li a
+{
+ color: hsl(0, 0%, 100%);
+ text-decoration: none;
+ text-align: center;
+}
+
+/* -------- ASIDE BAR --------------------------- */
+
+aside{
+    height: 100vh;
+    /* height: calc(100vh - 3rem); /* Will make the sidebar have length of vh */
+    /*top: 3rem; /* Makes it so the asidebar stays underneath nav */ 
+    position: sticky;
+    align-self: start;
+    grid-area: sidebar;
+    background-color: #87C4F2;
+}
+
+/* .logocont{
     text-align: center;
-    position: relative;
-    display: block;
-    margin: auto
+}
 
-  }
+.logo{
+    max-width:50%;
+    height: auto;
+}
 
-  .canvas
-  {
-    text-align: center;
-    position: relative;
-    display: block;
-    margin: auto
-  }
-   
-  .background 
-  {
-    width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-  }
+/* -------- MAIN CONTENT --------------------------- */
 
-/* GALLERY --------------------------------------------------------- */
+main{
+  margin-top: 2%;
+    grid-area: main;
+    background: #ffffff;
+  margin-bottom: 2%;
+}
 
- .collage
- {
+.welcometext{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+  margin-bottom: 2%;
+  color: #050414;
+}
+
+.highlight{
+  background-image: linear-gradient(45deg,#907AD6, #907AD6); /* Gradient from left to right */
+  background-clip: text; /* Clips the background to the text */
+  color: transparent; /* Makes the text itself transparent so the gradient is visible */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*CAROUSEL*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  background-color: #0000007f;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 4px;
   width: 100%;
-  height: 100%;
- }
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 
-/* SERVICES -------------------------------------------------------- */
-  .borderbg 
+/* SERVICE OFFERS */
+.service-container {
+  
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #907AD6;
+  color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+}
+
+h2 {
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Space between the title and the lists */
+}
+
+.lists-container {
+  display: flex; /* Flexbox to keep lists side by side */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-list ul, .price-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-list li, .price-list li {
+  padding: 8px 0;
+  font-size: 18px;
+}
+
+.service-list {
+  flex: 1;
+}
+
+.price-list {
+  flex: 1;
+  text-align: right;
+}
+
+
+/* -------- FOOTER ----------------------------------------------   */
+
+footer{
+    grid-area: footer;
+    background: #2C2A4A;
+    color: white;
+    padding: 2em;
+}
+
+.endpage 
   {
-    margin: auto;
-    background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
-    font-weight: bold;
-    border-radius: 50px; 
-    width: 1000px; 
-    height: 500px;
-    padding: 2px 10px 2px 10px;
-    font-size: 40px;
-  }
-
-  .borderbg2 
-  {
-    margin: auto;
-    background-color: rgb(255, 255, 255); 
-    font-weight: bold;
-    border-radius: 50px; 
-    width: 950px; 
-    height: 400px;
-    padding: 5px 5px 5px 5px;
-    font-size: 30px;
-  }
-
-  .offertxt
-  {
-    padding: 20px 0;
-    text-align: center;
-    font-weight: bold;
-    color: #FF70A4;
+    display: flex; /* Makes the container a flexbox */
+    justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  .offertxt2
-  {
-    text-align: left;
-    color: #ff9bbf;
-    font-family: Arial, Helvetica, sans-serif;
-  }
 
+/* ------- MOBILE RESPONSIVE BUTTON ---------------------------------- */
 
-/* TIPS ------------------------------------------------------------ */
-  .borderbg3
-  {
-    margin: auto;
-    background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
-    font-weight: bold;
-    border-radius: 30px; 
-    width: 500px; 
-    height: 50px;
-    padding: 2px 10px 2px 10px;
-    font-size: 40px;
-  }
+.mobile-button /* Will hide button on screens > 800px */
+{
+    display: none;
+}
 
-  .tipstxt
-  {
-    padding: 5px 0;
-    text-align: center;
-    font-weight: bold;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+/* @media(max-width: 800px) When screen of device is < 800px 
+{ 
+    .mobile-button {
+        display: block;
+    }
+    body{
+      grid-template-columns: 1fr;  
+    }
+    aside{
+        position: fixed;
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.404);
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+}
+*/
 
-  .tipstxt2
-  {
-    padding: 5px 0;
-    text-align: left;
-    font-weight: bold;
-    color: #ff9ecd;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-  }
-
-
-
-/* END PAGE -------------------------------------------------------- */
-
-  .endpage 
-  {
-    position: relative;
-    top: 100%;
-    transform: translateY(400%); /* kinda expands the page? */
-    width: 100%;
-    height: 155px;
-    background: linear-gradient(45deg,#FFE86E,#FF70A4,#6EE5FF);
-  }
-
-  .addresstxt 
-  {
-    padding: 10px 10px 10px 10px;
-    color: hsla(0, 0%, 100%, 0.812);
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .addresstxt2 
-  {
-    padding: 1px 10px 1px 10px;
-    color: hsla(0, 0%, 100%, 0.812);
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .hours 
-  {
-    transform: translate(1114%, -670%);
-    color: hsla(0, 0%, 100%, 0.812);
-    font-family: Arial, Helvetica, sans-serif;
-    position:absolute;
-  }
-
-  .hours2 
-  {
-    transform: translate(860%, -151%);
-    color: hsla(0, 0%, 100%, 0.812);
-    font-family: Arial, Helvetica, sans-serif;
-    position:absolute;
-  }
