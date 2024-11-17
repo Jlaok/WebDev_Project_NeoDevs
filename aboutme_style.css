@@ -49,24 +49,15 @@
     background: rgb(216, 219, 227)
  }
 
- /* Team intro + first polaroid */
+ /* team intros */
 
- .about_team{
+ .about_team {
    width: 100%;
-   font-size: 3.2em;
-   text-align: center;
-   color: #e33e7b;
+   font-size: 3.2em;  
+   text-align: center;  
+   color: #e33e7b;  
+   margin-top: 20px;  
  }
-
- .polaroid {
-   width: 370px;
-   height: 526.666666667px;
-   border: 15px solid #c5daf7;
-   z-index: 0;
-   margin-left: 70px;
-   background-color: #c5daf7;
-   position: relative;
-}
 
 .content-wrapper {
    display: flex;
@@ -75,6 +66,7 @@
 }
 
 .owner_img {
+   padding: 25px;
    width: 370px; 
    height: auto; 
    flex-shrink: 0; 
@@ -104,17 +96,117 @@
    word-wrap: break-word; 
 }
 
-
-.marker_name {
-   font-size: 4em;
-   z-index: 2;
-   font-family: "Permanent Marker", cursive;
-   font-weight: 400;
-   font-style: normal;
-   rotate: 2deg;
-   line-height: 0.7;
-   text-align: center;
-   position: relative;
+.content-wrapper2 {
+   display: flex;
+   align-items: flex-start; 
+   gap: 20px; 
 }
 
+.sofia_img {
+   padding: 25px;
+   width: 370px; 
+   height: auto; 
+   flex-shrink: 0; 
+}
 
+.text-content2 {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   gap: 10px;
+}
+
+.stylist {
+   font-size: 2.2em;
+   text-align: left; 
+   color: #FF70A4;
+   margin: 0;
+}
+
+.sofiadesc {
+   font-size: 1em; 
+   color: #ffa5c6;
+   margin: 0; 
+   line-height: 1.6; 
+   max-width: 500px; 
+   word-wrap: break-word; 
+}
+
+/* for mobile phones (for screens 600px or less) */
+
+@media (max-width: 600px) {
+
+   .content-wrapper, .content-wrapper2 {
+      flex-direction: column; 
+      gap: 15px; 
+    }
+  
+    .owner_img, .sofia_img {
+      width: 100%;  
+      padding: 10px; 
+    }
+  
+    .text-content, .text-content2 {
+      align-items: center;  
+    }
+  
+    .meet_the_owner, .stylist {
+      font-size: 1.8em;  
+      text-align: center;  
+    }
+  
+    .ninadesc, .sofiadesc {
+      font-size: 0.9em;  
+      max-width: 90%; 
+      margin: 0 auto; 
+      word-wrap: break-word;
+    }
+
+    .about_team {
+      font-size: 2em; 
+      text-align: center; 
+      color: #e33e7b;
+      margin-top: 10px; 
+      padding: 0 20px; 
+    }
+}
+
+/* for tablets (for screens 600px to 1024px) */
+
+@media (min-width: 600px) and (max-width: 1024px) {
+
+   .content-wrapper, .content-wrapper2 {
+     flex-direction: row; 
+     gap: 20px;
+   }
+ 
+   .owner_img, .sofia_img {
+     width: 250px; 
+     height: auto;
+     padding: 15px;
+   }
+ 
+   .text-content, .text-content2 {
+     align-items: flex-start;
+     max-width: 60%; 
+   }
+ 
+   .meet_the_owner, .stylist {
+     font-size: 2em; 
+     text-align: left;
+   }
+ 
+   .ninadesc, .sofiadesc {
+     font-size: 1.1em;
+     line-height: 1.6;
+     max-width: 90%;
+     margin: 0 auto;
+   }
+ 
+   .about_team {
+     font-size: 2.5em; 
+     margin-top: 15px;
+     padding: 0 20px;
+   }
+ }
