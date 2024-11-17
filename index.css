@@ -44,9 +44,9 @@ nav{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size:150%;
-    background-image: linear-gradient(45deg,#907AD6, #907AD6); 
-    background-clip: text; 
-    color: transparent;
+    background-image: linear-gradient(45deg,#907AD6, #907AD6); /* Gradient from left to right */
+    background-clip: text; /* Clips the background to the text */
+    color: transparent; /* Makes the text itself transparent so the gradient is visible */
 }
 
 
@@ -131,7 +131,7 @@ main{
 }
 
 .highlight{
-  background-image: linear-gradient(45deg,#907AD6, #907AD6); 
+  background-image: linear-gradient(45deg,#907AD6, #907AD6); /* Gradient from left to right */
   background-clip: text; /* Clips the background to the text */
   color: transparent; /* Makes the text itself transparent so the gradient is visible */
   font-family: Arial, Helvetica, sans-serif;
@@ -231,8 +231,7 @@ main{
 
 
 /* SERVICE OFFERS */
-.service-container {
-  
+.service-container { 
   max-width: 1000px;
   margin: 0 auto;
   background-color: #4F518C;
@@ -241,11 +240,13 @@ main{
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+  margin-bottom: 20px;
 }
 
-h2 {
+h3 {
   text-align: center; /* Center the title */
   margin-bottom: 20px; /* Space between the title and the lists */
+  font-size: 26px;
 }
 
 .lists-container {
@@ -271,6 +272,25 @@ h2 {
 .price-list {
   flex: 1;
   text-align: right;
+}
+
+
+/* TIPS & TRICKS */
+.TIPS-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #4F518C;
+  color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+}
+
+.TIPLIST-container {
+  display: flex; /* Flexbox to keep lists side by side */
+  justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -317,4 +337,3 @@ footer{
     }
 }
 */
-
