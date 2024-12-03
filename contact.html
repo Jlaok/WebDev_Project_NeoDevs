@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enchanted Locks</title>
+    <link rel="stylesheet" href="contact2.css">
+    <script type="text/javascript" src="contact.js"
+    defer></script>
+</head>
+
+<body>
+
+     <!-- NAV BAR ------------------->
+    <nav> <button class="mobile-button" onclick="toggleSidebar()">Button</button>
+
+        <div class="logocont">
+            <img src="ELlogoWHITE.png" alt="Enchanted Locks Logo" class="logo"> 
+        </div>
+
+        <div class="logotextdiv">
+            <p class="logotext">ENCHANTED LOCKS</p>
+        </div>
+
+        <hr>
+
+        <div class="navbar">
+            <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about_me.html">ABOUT</a></li>
+              <li><a href="faq.html">FAQS</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+  
+    </nav>
+
+    <!-- SIDE BAR ------------------->
+    <aside id="sidebar">
+
+        <!-- 
+        <div class="logocont">
+        <img src="gradient-hair-salon-logo-template (1).png" alt="Enchanted Locks Logo" class="logo"> 
+        </div>
+        -->
+        <div>
+
+        </div>
+
+    </aside>
+    
+    
+   <!-- MAIN CONTENT ------------------->
+    <main>
+
+        <!--WELCOME-->
+        
+        <div class="faq-container">
+          
+          <h1>Book your haircut here</h1>
+          <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+          <div class="faq-question">
+            
+            <label  for="name"> Your Name</label><br>      
+            <input class="inputE" type="text" id="name" name="fname" ><br><br>
+
+          </div>
+
+
+          
+            <div class="faq-question">
+              <label for="Email">Email</label><br>
+
+              <input class="inputE" type="email" id="email" name="email" placeholder="john@example.com"><br><br>
+            </div>
+          
+
+
+
+          <h3 class="opts">
+            Here are the available services for booking
+          </h3><br>
+
+
+
+
+        <div class="dropdown-space">
+          <div class="dropdown-options">
+            <details class="hairops">
+                <summary>Hair</summary>
+                    <input type="checkbox"> gent cut & B/D <br>
+                    <input type="checkbox"> ladies cut & B/D <br>
+            </details>
+          </div>
+        </div>
+
+
+        <div class="dropdown-space">
+          <div class="dropdown-options">
+              <details class="hairops">
+                <summary>Nails</summary>
+                    <input type="checkbox"> hands only manacure  <br>
+                    <input type="checkbox"> full manacure  <br>
+              </details>
+          </div>
+        </div>
+
+
+
+        <div class="dropdown-space">
+          <div class="dropdown-options">
+              <details class="hairops">
+                <summary>Makeup</summary>
+                    <input type="checkbox"> half face <br>
+                    <input type="checkbox"> foundation only  <br>
+                    <input type="checkbox"> lashes  <br>
+              </details>
+          </div>
+        </div>
+
+
+          <div class="dropdown-options">
+              <details class="hairops">
+                <summary>Other</summary>
+                    <input type="checkbox"> chiropractor <br>
+                    <input type="checkbox"> fulll package<br>
+              </details>
+          </div>
+
+
+
+          <div class="faq-question">
+            <label for="text">Enter in additional requests here</label><br>
+                      
+            <textarea class="inputC" type="text" id="text" name="text" maxlength="50"></textarea>
+
+          </div>
+
+
+              <input type="submit" class="buttonb" value="Book Now">
+        </div><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="faq-container">
+        </form>  
+          <h2 class="opts">
+            Enquiries
+          </h3><br>
+
+          <div class="dropdown-space">
+            <div class="dropdown-options">
+                <details class="hairops">
+                  <summary>Booking</summary>
+                  <p><br>
+                    Booking can be done online here, organized with a call to our reception, or in person at the shop. Whichever is most convient for you!
+                  </p>
+                </details>
+            </div>
+          </div>
+
+          <div class="dropdown-space">
+            <div class="dropdown-options">
+                <details class="hairops">
+                  <summary>Product recomendations</summary>
+                  <p><br>
+                    We recomend x y z hair products for you, which can all be found in our store! Aswell these can be commonly found in stores and pharmarcies across ireland
+                  </p>
+                </details>
+            </div>
+          </div>
+
+          <div class="dropdown-space">
+            <div class="dropdown-options">
+                <details class="hairops">
+                  <summary>General Questions</summary>
+                  <p><br>
+                    We recomend you go to the FAQ but any and all questions can be answered by call or email or in store by our profesionals
+                  </p>
+                </details>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+        <script src="script.js"></script>
+
+    </main>
+
+  
+
+
+   <!-- FOOTER  ------------------------->
+    <footer>
+
+    <div class="endpage">
+
+      <div class="leftinfo2">
+      <h3 class="addresstxt">Address:</h3>
+        <p class="addresstxt2">
+        Park House        <br>
+        191 N Circular Rd <br>
+        Grangegorman      <br>
+        Dublin 7          <br>
+        D07 EWV4
+        </p> 
+      </div>
+
+      <div class="rightinfo2">
+      <h3 class="hours" >Shop Hours:</h3>
+        <p class="hours2" >
+        Mon-Wed: 9am-5pm  <br>
+        Thurs: 9-4pm      <br>
+        Friday 11am-6pm   <br>
+        Sat-Sun: CLOSED 
+        </p>
+      </div>
+      
+    </div>
+
+    </footer>
+</div>
+
+</body>
+
+</html>
